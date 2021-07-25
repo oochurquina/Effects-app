@@ -1,1 +1,15 @@
-<p>user works!</p>
+<div *ngIf="!loading" class="row">
+    <div class="col-4">
+        <img [src]="usuario.avatar" alt="avatar" class="img-thumbnail">
+    </div>
+    <div class="col">
+        <div class="list-group">
+            <div class="list-group-item"><b>Nombre: </b>{{usuario.first_name}}</div>
+            <div class="list-group-item"><b>Apellido: </b>{{usuario.last_name}}</div>
+            <div class="list-group-item"><b>Correo: </b>{{usuario.email}}</div>
+
+
+
+        </div>
+    </div>
+</div>
